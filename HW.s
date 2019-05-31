@@ -9,13 +9,13 @@
 	LDR R1,[R0]		@load contents (label a) into R1(R1 is now called a)
 	LDR R0,=b 		@load label b into R0
 	LDR R2,[R0]		@load contents (label b) into R2(R2 is now called b)
-	LDR R0,=value1	@load label value1 into R0
+	LDR R0,=value1		@load label value1 into R0
 	LDR R3,[R0]		@load contents (label value1) into R3(R3 is now called value1)
-	LDR R0,=value2	@load label value2 into R0
+	LDR R0,=value2		@load label value2 into R0
 	LDR R4,[R0]		@load contents (label value2) into R4(R4 is now called value2)
-	LDR R0,=value3	@load label value3 into R0
+	LDR R0,=value3		@load label value3 into R0
 	LDR R5,[R0]		@load contents (label value3) into R5(R5 is now called value3)
-	LDR R0,=value4	@load label value4 into R0
+	LDR R0,=value4		@load label value4 into R0
 	LDR R6,[R0]		@load contents (label value4) into R6(R6 is now called value4)
 	
 	ADD R3,R1,R2	@add R1 to R2, put in R3
