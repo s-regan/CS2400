@@ -5,7 +5,7 @@
 @edit: I realize that something is going wrong when you step through 
 @I will try to address it in the future  
 
-	LDR r0,=a 		@load label a into R0
+	LDR R0,=a 		@load label a into R0
 	LDR R1,[R0]		@load contents (label a) into R1(R1 is now called a)
 	LDR R0,=b 		@load label b into R0
 	LDR R2,[R0]		@load contents (label b) into R2(R2 is now called b)
