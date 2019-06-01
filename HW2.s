@@ -4,7 +4,7 @@
 
 string: .asciz "This is my string"	@count should be 17 
 
-	EQU nul,0		@let nul be 0
+	.equ nul,0		@let nul be 0
 	
 	.align			@align data
 	
