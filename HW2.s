@@ -1,8 +1,8 @@
 @Sarah Regan,2017
 
-@count 3 of characters in a string
+@count # of characters in a string
 
-string: .asciz "This is my string"	@count should be 17
+string: .asciz "This is my string"	@count should be 17 
 
 		.equ nul,0			@let nul be 0
 	
@@ -19,4 +19,5 @@ loop: 	LDRB R2,[R0],#1		@load 1 byte from R0(char) into R2
 		SUB R1,R1,#1		@if true, subtract 1 from counter
 
 stop:	SWI 0x11			@stop program
-	
+
+@if using ARMSim, R1 should be equal to 11 (hex for 17)
