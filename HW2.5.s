@@ -23,4 +23,4 @@ loop:	 LDRB R3,[R0],#1		@load 1 byte from R0(string) into R3
 	CMP R3,#nul				@compare R3 to nul
 	BNE loop			@if not nul(empty) branch to loop
 	
-stop: SWI 0x11			@stop program
+stop: SWI 0x11				@stop program
