@@ -11,7 +11,7 @@ string: .asciz "This is my string"	@count should be 17
 	LDR R0,=string		@load whatever sting is into R0
 	MOV R1,#0		@move 0 into R1
 	
-loop: 		LDRB R2,[R0],#1		@load 1 byte from R0(char) into R2
+loop: 	LDRB R2,[R0],#1		@load 1 byte from R0(char) into R2
 	ADD R1,R1,#1		@increment counter by 1
 	CMP R2,#nul		@compare R2 to nothing 
 	BNE loop		@if false goto loop
