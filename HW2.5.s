@@ -13,7 +13,7 @@ char:	.ascii "t"			@count should be 2
 	MOV R2,#0			@zero out R2(counter)
 	LDRB R4,[R1],#1			@load 1 byte from R1(char) into R4
 	
-loop:	 LDRB R3,[R0],#1		@load 1 byte from R0(string) into R3
+loop:	LDRB R3,[R0],#1		@load 1 byte from R0(string) into R3
 	CMP R3,#nul			@compare R3 to nul
 	BEQ stop			@if nul(empty/0) branch to stop	
 	CMP R4,R3			@otherwise cont, compare char in R4 to R3
