@@ -7,4 +7,4 @@ Keil uVision and ARMSim from University of Victoria
 I can't recommend ARMSim enough, you can find it here:
 https://connex.csc.uvic.ca/access/content/group/ARMSim/SIMWeb/Downloads.html
 
-uVision is a great professional tool, but ARMSim is simple enough to help students understand what they are doing without overwhelming thgem with menus and options
+uVision is a great professional tool, but ARMSim is simple enough to help students understand what they are doing without overwhelming them with menus and options
