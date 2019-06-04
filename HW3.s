@@ -11,7 +11,7 @@
 
 .equ SWI_exit, 0x11
 
-start:	MOV R1,#0 	@r1 is count, save into count location  after loop
+start:	MOV R1,#0 		@r1 is count, save into count location  after loop
 	MOV R2,#0		@r2 is j- loop control variable
 	LDR R0,=size		@load address of size
 	LDR R3,[R0]		@load size(number of words in tableIn) into r3
@@ -21,7 +21,7 @@ start:	MOV R1,#0 	@r1 is count, save into count location  after loop
 	LDR R6,=tableOut	@r6 to point to first available word in tableOut
 	
 loop:	CMP R2,R3		@compare j and size
-	BGE end		@exit loop is j>=r3
+	BGE end			@exit loop is j>=r3
 	
 	LDR R7,[R5]		@load current word from tableIn
 	CMP R7,R4		@compare word from table to target
@@ -42,6 +42,6 @@ end: LDR R0,=count		@load address of count
 .data
 count: .word 0
 tableIn: .word 12,13,9,12,13,9,8,9,9,8
-size: .word 10	@number of words in tableIn
+size: .word 10			@number of words in tableIn
 target: .word 9
-tableOut: .word 0	@no need to specify exact number of words in tableOut
+tableOut: .word 0		@no need to specify exact number of words in tableOut
