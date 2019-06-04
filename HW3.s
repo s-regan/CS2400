@@ -34,7 +34,7 @@ endif: ADD R5,R5,#4		@add 4 to pointer to tableIn so it points to next word in t
 	ADD R2,R2,#1		@j++
 	B loop
 
-end: LDR R0,=count		@load address of count
+end:	LDR R0,=count		@load address of count
 	STR R1,[R0]		@store count
 	
 	SWI SWI_exit
