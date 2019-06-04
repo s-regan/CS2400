@@ -30,7 +30,7 @@ loop:	CMP R2,R3		@compare j and size
 	ADD R6,R6,#4		@add 4 to r6 so it points to next available location in tableOut
 	ADD R1,R1,#1		@count++
 
-endif: ADD R5,R5,#4		@add 4 to pointer to tableIn so it points to next word in table
+endif:	ADD R5,R5,#4		@add 4 to pointer to tableIn so it points to next word in table
 	ADD R2,R2,#1		@j++
 	B loop
 
